@@ -9,7 +9,7 @@ spec:
     matchLabels:
       app: reticules
       tier: backend
-  replicas: 2
+  replicas: 7
   template:
     metadata:
       labels:

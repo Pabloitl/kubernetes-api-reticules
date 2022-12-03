@@ -8,10 +8,10 @@ kubectl config set-context --current --namespace pvargas
 
 kubectl apply -f persistent-volume.yml
 kubectl apply -f persistent-volume-claim.yml
-# kubectl apply -f api.yml
-# kubectl apply -f api-service.yml
 kubectl apply -f database.yml
 kubectl apply -f database-service.yml
 kubectl apply -f backend.yml
 kubectl apply -f backend-service.yml
+
+minikube addons enable ingress
 kubectl apply -f ingress.yml
